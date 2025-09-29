@@ -1,6 +1,7 @@
 import { loadHome } from "./pages/home";
+import { loadMenu } from "./pages/menu";
 
-loadHome();
+loadMenu();
 
 document.getElementById("home-btn")
         .addEventListener("click", loadHome);
