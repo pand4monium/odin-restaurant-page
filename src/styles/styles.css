@@ -1,0 +1,83 @@
+* {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > button {
+    font-size: 30px;
+    border: #ddd solid 5px;
+    border-radius: 15px;
+    
+    color: #ddd;
+    background-color: #333;
+
+    padding: 4px 10px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#res-name {
+    font-size: 50px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    padding: 30px;
+}
+
+#content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    border: #333 solid 2px;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 70vw;
+    min-width: 50vw;;
+}
+
+.menu > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.item-name {
+    font-size: 24px;
+}
+.item-description {
+    font-size: 15px;
+}
+.item-price {
+    font-size: 20px;
+}

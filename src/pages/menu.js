@@ -53,9 +53,9 @@ export const loadMenu = () => {
 
     pageContent.innerHTML = `
         <div id="menu-title" class="title">Menu</div>
-        <div id="side-items"></div>
-        <div id="main-items"></div>
-        <div id="drink-items"></div>
+        <div id="side-items" class="menu"></div>
+        <div id="main-items" class="menu"></div>
+        <div id="drink-items" class="menu"></div>
     `
 
     const sideContent = document.getElementById("side-items");
@@ -64,6 +64,7 @@ export const loadMenu = () => {
 
     sideContent.innerHTML = `
         <div class="title">Side Dishes</div>
+        <div>
         ${
             sideItems.reduce((acc, item) => {
                 acc += `
@@ -76,10 +77,12 @@ export const loadMenu = () => {
                 return acc;
             }, ``)
         }
+        </div>
     `
 
     mainContent.innerHTML = `
         <div class="title">Main Dishes</div>
+        <div>
         ${
             mainItems.reduce((acc, item) => {
                 acc += `
@@ -92,10 +95,12 @@ export const loadMenu = () => {
                 return acc;
             }, ``)
         }
+        </div>
     `
 
     drinkContent.innerHTML = `
         <div class="title">Beverage</div>
+        <div>
         ${
             drinkItems.reduce((acc, item) => {
                 acc += `
@@ -108,5 +113,6 @@ export const loadMenu = () => {
                 return acc;
             }, ``)
         }
+        </div>
     `
 }

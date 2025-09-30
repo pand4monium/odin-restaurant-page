@@ -6,7 +6,7 @@ export const loadHome = () => {
         PANDA Restaurant is famous for the many food options it is able to provide. 
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio voluptate eius velit sapiente nulla quis obcaecati ratione blanditiis dolore sed? Obcaecati aspernatur enim autem natus! Nulla magnam id cum temporibus.</div>
     <div id="res-hours">
-        <span>Opening Hours</span>
+        <span class="title">Opening Hours</span>
         <table>
             <tr>
                 <th>Day</th>
@@ -42,9 +42,9 @@ export const loadHome = () => {
             </tr>
         </table>
     </div>
-    <id id="res-location">
-        <span>Location</span>
+    <div id="res-location">
+        <span class="title">Location</span>
         <span>314 Panda Lane, S159265</span>
-    </id>
+    </div>
     `
 }
